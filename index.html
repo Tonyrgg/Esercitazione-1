@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .grigio {
+                background-color: rgb(188, 224, 213);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #6161c9;
+            }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+            grid-template-rows: repeat(6, 55px);
+            grid-template-areas: 
+            "zeroo zeroo zeroo zeroo"
+            "piu meno per diviso"
+            "sette otto nove uguale"
+            "quattro cinque sei uguale"
+            "uno due tre uguale"
+            "btn-zero punto cancella uguale";
+        }
+
+        .zeroo {
+            display: flex;
+            grid-area: zeroo;
+            background-color: rgb(131, 131, 131);
+            justify-content: end;
+            align-items: center;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            padding-right: 10px;
+            color: white;
+        }
+        
+        .piu {
+            grid-area: piu;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #6161c9;
+            border-left: none;
+            border-top: none
+        }
+        
+        .meno {
+            grid-area: meno;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #6161c9;
+            border-top: none
+        }
+        
+        .per {
+            grid-area: per;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #6161c9;
+            border-top: none
+        }
+        
+        .diviso {
+            grid-area: diviso;
+            background-color: azure;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #6161c9;
+            border-top: none;
+            border-right: none;
+        }
+        
+        .sette {
+            grid-area: sette;
+            border-left: none;
+        }
+        
+        .otto {
+            grid-area: otto;
+        }
+        
+        .nove {
+            grid-area: nove;
+        }
+        
+        .quattro {
+            grid-area: quattro;
+            border-left: none;
+        }
+        
+        .cinque {
+            grid-area: cinque;
+        }
+
+        .sei {
+            grid-area: sei;
+        }
+
+        .uno {
+            grid-area: uno;
+            border-left: none;
+        }
+        
+        .due {
+            grid-area: due;
+        }
+        
+        .tre {
+            grid-area: tre;
+        }
+        
+        .btn-zero {
+            grid-area: btn-zero;
+            border-bottom-left-radius: 7px;
+            border-left: none;
+            border-bottom: none;
+        }
+        
+        .punto {
+            grid-area: punto;
+            border-bottom: none;
+        }
+        
+        .cancella {
+            grid-area: cancella;
+            border-bottom: none;
+        }
+        
+        .uguale {
+            grid-area: uguale;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-right-radius: 7px;
+        }
+
+
+
+
+ 
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+                <div class="zeroo">0</div>
+                <div class="piu">+</div>
+                <div class="meno">-</div>
+                <div class="per">x</div>
+                <div class="diviso">/</div>
+                <div class="sette grigio">7</div>
+                <div class="otto grigio">8</div>
+                <div class="nove grigio">9</div>
+                <div class="quattro grigio">4</div>
+                <div class="cinque grigio">5</div>
+                <div class="sei grigio">6</div>
+                <div class="uno grigio">1</div>
+                <div class="due grigio">2</div>
+                <div class="tre grigio">3</div>
+                <div class="btn-zero grigio">0</div>
+                <div class="punto grigio">.</div>
+                <div class="cancella grigio">AC</div>
+                <div class="uguale">=</div>
+        </section>
+    </main>
+</body>
+</html>
